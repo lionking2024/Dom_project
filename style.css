@@ -1,0 +1,122 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins';
+}
+
+.wrapper{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+.wrapper .img{
+    margin: 30px;
+    width: 30%;
+}
+
+.wrapper .img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.wrapper .info{
+    width: 25%;
+    margin: 20px;
+    height: 85%;
+    color: #444;
+}
+
+.info h2,p,.size,.qty,.cart,.buy{
+    padding: 15px 10px;
+}
+.info h2{
+    font-size:35px;
+    font-weight:900;
+}
+
+.info p{
+    font-size: 22px;
+}
+    /* size select */
+    .size{
+        width: 100%;
+}
+
+.size .select{
+    display:flex;
+    height: 55px;
+    border: 1px solid #444;
+    padding:20px;
+    cursor:pointer;
+    align-items:center;
+    justify-content: space-between;
+    margin: 10px 0;
+}
+
+.size .option-list{
+    position: relative;
+    padding: 20px;
+    margin-top:2px;
+    background: #fff;
+    border: 1px solid #444;
+    display:none;
+}
+.size.click .option-list{
+    display:block;
+}
+
+.option-list .option{
+    display: flex;
+    height: 55px;
+    cursor: pointer;
+    padding: 0 10px;
+    align-items: center;
+}
+
+.option-list .option:hover{
+    background: #ebebeb;
+}
+.qty input{
+    padding:20px;
+    width: 100px;
+    outline: none;
+    font: size 22px;
+    font-weight: bold;
+}
+.cart{
+    display: flex;
+    align-items:center;
+}
+
+.cart button{
+    width: 400px;
+    height: 55px;
+    cursor: pointer;
+    background: #fff;
+}
+
+.cart i{
+    display: flex;
+    align-items: center;
+    width: 80px;
+    height: 55px;
+    font-size: 30px;
+    justify-content: center;
+    margin-left:10px;
+    cursor: pointer;
+}
+.cart i{
+    color:red;
+}
+
+.buy button{
+    height: 55px;
+    width: 100%;
+    font-size:20px;
+    background: #222;
+    color:#fff;
+    cursor: pointer;
+}
